@@ -8,6 +8,11 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script>
+      function showMessage() {
+        alert('click!');
+      }
+    </script>
   </head>
 
   <body>
@@ -28,8 +33,8 @@
          Southeast corner 2: 41.65584856236529, -93.74384387343821
       -->
       <a-plane gps-projected-entity-place='latitude: 39.60848005739435; longitude: -105.95096365026978;' color='yellow'></a-plane>
-      <a-box gps-projected-entity-place='latitude: 39.60946550882097; longitude: -105.95130979698808;' color='red'></a-box>
-      <a-camera gps-projected-camera rotation-reader alert></a-camera>
+      <a-box onclick='showMessage()' gps-projected-entity-place='latitude: 39.60946550882097; longitude: -105.95130979698808;' color='red' ></a-box>
+      <a-camera id='cam' gps-projected-camera rotation-reader alert></a-camera>
     </a-scene>
   </body>
 </html>
