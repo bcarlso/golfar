@@ -11,20 +11,23 @@
   </head>
 
   <body>
-    <a-scene
+    <a-scene inspector stats
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"  
     >
+      <!--
+         Northwest parking lot: 41.656423, -93.746081
+         Southeast parking lot: 41.655728, -93.744009
+         Northeast parking lot: 41.656436, -93.744130
 
-      <a-text
-        value="Customers are more demanding than ever."
-        look-at="[gps-projected-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 29.442242; longitude: -98.480559;"
-      ></a-text>
-      <!--  -->
-      <a-box gps-projected-entity-place='latitude: 29.44283; longitude: -98.48018' material='color: red' scale='10 10 10'></a-box>
-      <a-box gps-projected-entity-place='latitude: 29.442114; longitude: -98.480618' material='color: blue' scale='5 5 5'></a-box>
+         Northwest corner: 41.65644683691442, -93.74550270137811
+         Southwest corner: 41.656146961723636, -93.74550270137811
+         Southeast corner: 41.65613957561759, -93.74449830974504
+         Northwest corner 2: 41.65625332155766, -93.74423534891721
+         Southwest corner 2: 41.65584856236529, -93.74424128036388
+         Southeast corner 2: 41.65584856236529, -93.74384387343821
+      -->
+      <a-plane gps-projected-entity-place='39.60848005739435, -105.95096365026978' color='yellow' height='20' width='20'></a-plane>
       <a-camera gps-projected-camera rotation-reader></a-camera>
     </a-scene>
   </body>
