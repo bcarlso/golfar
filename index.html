@@ -21,9 +21,10 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         let house = document.querySelector('#house');
-        house.addEventListener('click', () => {
+        house.addEventListener('click', (event) => {
           let banner = document.querySelector('#banner');
-          banner.textContent = 'Clicked'
+          banner.textContent = 'Clicked';
+          this.color = 'white';
         });
       });
       
