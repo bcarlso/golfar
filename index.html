@@ -12,7 +12,8 @@
       document.addEventListener('DOMContentLoaded', () => {
         let house = document.querySelector('#house');
         house.addEventListener('click', () => {
-            alert('Clicked!');
+          let banner = document.querySelector('#banner');
+          banner.textContent = 'Clicked'
         });
       });
       
@@ -20,6 +21,9 @@
   </head>
 
   <body>
+    <div id='banner' width='100%'>
+      Placeholder Text
+    </div>
     <a-scene inspector stats
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"  
